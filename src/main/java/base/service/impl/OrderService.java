@@ -1,9 +1,12 @@
 package base.service.impl;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 import base.dao.OrderRepository;
 import base.po.Order;
 
@@ -32,6 +35,10 @@ public class OrderService {
 
 	public void deleteall(){
 		orderRepository.deleteAll();
+	}
+	
+	public List<Order> findByCustomer(String customer){
+		return orderRepository.findByCustomer(customer);
 	}
 	
 }

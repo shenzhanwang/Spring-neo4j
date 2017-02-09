@@ -11,4 +11,8 @@ public void setState(String state) {
 	this.state = state;
 }
 
+public MSG(String state) {
+	this.state = state;
+}
+
 }

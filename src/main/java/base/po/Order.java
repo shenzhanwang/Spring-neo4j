@@ -15,8 +15,8 @@ public class Order {
 	private String customer;
 	private String type;
 	
-	@RelatedTo(type="has_item")
-	Set<Item> items=new HashSet<Item>();
+//	@RelatedTo(type="has_item")
+//	Set<Item> items=new HashSet<Item>();
 	public Order() {
 	}
 
@@ -24,6 +24,7 @@ public class Order {
 		this.customer = customer;
 		this.type = type;
 	}
+
 
 	public Long getId() {
 		return id;
@@ -33,13 +34,13 @@ public class Order {
 		this.id = id;
 	}
 
-	public Set<Item> getItems() {
-		return items;
-	}
-
-	public void setItems(Set<Item> items) {
-		this.items = items;
-	}
+//	public Set<Item> getItems() {
+//		return items;
+//	}
+//
+//	public void setItems(Set<Item> items) {
+//		this.items = items;
+//	}
 
 	public String getCustomer() {
 		return customer;
