@@ -10,6 +10,11 @@
  
  4.提供查询操作，可按照点的属性查找对应的点。
  
+ 5.创建接口
+ http://localhost:8080/Spring-neo4j/create
  
-  效果图
+ 删除接口
+ http://localhost:8080/Spring-neo4j/delete
+ 
+ 创建后到neo4j控制台查看的效果图
 ![输入图片说明](https://github.com/shenzhanwang/Spring-neo4j/blob/master/%E6%88%AA%E5%9B%BE/1.jpg)
